@@ -1,0 +1,49 @@
+
+function bom()
+  turtle.dig()
+  sleep(0.5)
+  while turtle.detect() do
+    turtle.dig()
+    sleep(0.5)
+  end
+  turtle.forward()
+  turtle.digUp()
+  turtle.digDown()
+  while turtle.detectUp() do
+    turtle.digUp()
+    sleep(0.5)
+  end
+end
+ 
+function dom()
+  turtle.digDown()
+  turtle.down()
+  turtle.digDown()
+  turtle.down()
+  turtle.digDown()
+  bom()
+  turtle.turnRight()
+  bom()
+  turtle.turnRight()
+  bom()
+  turtle.turnRight()
+  turtle.down()
+end
+print("I need Height")
+k=read()
+print (fuel)
+n=k
+n=n-5
+a=n%3
+n=n-a
+n=n/3
+for i=1,n do
+
+dom()
+end
+i=0
+for i=1,k do
+turtle.up()
+end
+    
+    
